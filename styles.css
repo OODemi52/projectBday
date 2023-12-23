@@ -1,0 +1,28 @@
+/* 
+    This is a CSS stylesheet.
+    CSS is used to add style to your HTML page. Most design done on web pages are done using CSS, and there are frameworks and libraries to make this easier.
+    CSS can be written in three locations:
+        1.) In a stylesheet like this.
+        2.) At the top of your HTML page in a <style> tag.
+        3.) Inline with you HTML, also within a style tag.
+    The stylesheet method is preffered as it keeps out code clean, and makes it easier to maintain our styles,
+    but when making a decsion (both pertaining to CSS, and software development as a whole, research should be done
+    to choose the best option.
+    
+    When using a style sheet, the file needs to be "linked" in your HTML file. This is done with the <link> tag.
+
+    CSS can be a bit tricky to learn at first, but once you get the grasp, it's pretty easy to understand.
+
+    The last thing to cover is the box model. The box model is a representation of how elements in webpages are structed. Here is a brief overview,
+    but I would recommend looking more into this as it is a very important CSS concept, and will save you a lot of headache if you learn and understand it;
+
+
+        Box Model:
+        The box model is a fundamental concept in CSS that describes how elements are rendered on a webpage.
+        Each element in CSS is represented as a rectangular box, which consists of four main components:
+        1. Content: The actual content of the element, such as text, images, or other HTML elements.
+        2. Padding: The space between the content and the border. It provides cushioning around the content.
+        3. Border: The line that surrounds the padding and content. It can have different styles, colors, and thickness.
+        4. Margin: The space between the border and other elements on the page. It creates the gap between elements.
+        *It's important to note that the width and height properties in CSS refer to the content area only. To calculate the total size of an element, you need to consider the content, padding, border, and margin.
+*/
