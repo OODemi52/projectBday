@@ -20,6 +20,43 @@ cd projectBday
 Below this will be more guidance about the things that we will do in this project, and honestly I am not 100% sure on the organinzaiton of everthing and things might move around, but what we have here should be enough to get us started. So go ahead, clone the repositiory and take a look around!
 ---
 
+## Git and Github
+Here we will cover common Git commands for interacting with local (on your machine) and remote (not on your machine) repositories. We have already covered above how to fork/clone a repository above.
+
+- Pull: When some commits and "pushes" their code to the remote repository on Github, we then need to "pull" the changes down to our local repository so that the work we do is in sync, so to say, with the current state of the remote repo. We use the following command:
+
+```sh
+git pull
+```
+- Branching: Git allows us to make use of a structure reffered to as branching, in which we can have multiple versions of our repository to work on. These branches can be configured with special configurations and permissions. Branches can also be "merged" together to bring various changes, features, etc. There are many ways to set up branches for productivity and proper "Git hygiene". To create a new branch, we use the command:
+
+```sh
+git branch <branch_name>
+```
+Then we push the newly created branch to the remote repo:
+```sh
+git push origin <branch_name>
+```
+
+- Checkout: We use the "checkout" command to switch to a different branch in our repo:
+```sh
+git checkout <branch_name>
+```
+After checking out to a different branch, it is important to check what branch we are in before making commit to avoid commiting in th wrong branch.
+The following shows all the branches in your repo
+```sh
+git branch
+```
+And the following returns the branch you are CURRENTLY in:
+```sh
+git branch --show-current
+```
+
+
+
+
+---
+
 In my opinion, there are 2 very important, and often overlooked, facets of teaching people about software development - Vocabulary and Context.
 
 ## Glossary
