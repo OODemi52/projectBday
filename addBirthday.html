@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = stylesheet href = "styles.css">
   <title>Project Bday</title>
 </head>
 
@@ -11,18 +12,32 @@
     <header>
       <img id = "picture" src = "" alt = "Christ Chapel Birthdays">
       <h1 id = "siteName"> Christ Chapel MD Birthdays </h1>
-      <ul>
-        <li><a href = "index.html"> Home </a></li>
-        <li><a href = "birthdays.html"> Birthdays </a></li>
-        <li><a href = "wishes.html"> Send Wishes</a></li>
-        <li><a href = "addBirthday.html"> Add a Birthday </a></li>
-      </ul>      
+      <hr>
+      <section>
+        <ul id = "buttons">
+          <li><a href = "index.html"> Home </a></li>
+          <li><a href = "birthdays.html"> Birthdays </a></li>
+          <li><a href = "wishes.html"> Send Wishes</a></li>
+          <li><a href = "addBirthday.html"> Add a Birthday </a></li>
+        </ul> 
+    </section>     
     </header>
 
     <main>
-        <form>
-            <input type = "text" name = "name" placeholder= "enter name" required>
+      <h2>Fill form to add a birthday</h2>
+      <fieldset>
+        <form id = "birthForm">
+          <label for = "name"> Enter full name </label><br>
+          <input type = "text" name = "name" placeholder= "enter name" required><br>
+          <label for = "BirthDate"> Enter birth date </label><br>
+          <input type = "text" name = "BirthDate" placeholder= "birthday" required><br>
+          <label for = "phoneNumber"> Enter phone number </label><br>
+          <input type = "tel" name = "phoneNumber" placeholder= "(999)999-9999" required><br>
+          <label for = "email"> Enter email </label><br>
+          <input type = "email" name = "email" placeholder= "birthday@gmail.com" required><br><br>
+          <input type="submit" value="Submit">
         </form>
+      </fieldset>
     </main>
 
     <footer>
