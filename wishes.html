@@ -10,7 +10,7 @@
 <body>
   <div class = "container">
     <header>
-      <img id = "picture" src = "" alt = "Christ Chapel Birthdays">
+      <img id = "picture" src = "CC-Logo.png" alt = "Christ Chapel Birthdays">
       <h1 id = "siteName"> Christ Chapel MD Birthdays </h1>
       <hr>
       <section>
@@ -19,23 +19,28 @@
           <li><a href = "birthdays.html"> Birthdays </a></li>
           <li><a href = "wishes.html"> Send Wishes</a></li>
           <li><a href = "addBirthday.html"> Add a Birthday </a></li>
+          <script src="https://kit.fontawesome.com/96cd2da4f6.js" crossorigin="anonymous"></script>
         </ul> 
     </section>      
     </header>
 
-    <main>
-      <h2> Send a birthday message to a celebrant </h2>
-      <fieldset>
-        <form id = "wishesForm">
-          <label for = "name"> Enter full name </label><br>
-          <input type = "text" name = "name" placeholder= "enter celebrant's name" required><br>
-          <label for = "email"> Enter email </label><br>
-          <input type = "email" name = "email" placeholder= "birthday@gmail.com" required><br>
-          <label for = "wishes"> Send the celebrant a birthday message </label><br>
-          <input type = "text" name = "wishes" placeholder = "send the celebrant a birthday message"><br><br>
-          <input type="submit" value="Submit">
-        </form>
-      </fieldset>
+    <main id = "wishesForm">
+      <!-- <h2> Send a birthday message to a celebrant </h2> -->
+      <form>
+        <div class="input-group">
+          <input type = "text" id = "name" required>
+          <label for = "name"><i class="fa-solid fa-user"></i> Enter celebrant's name </label>
+        </div>
+        <div class="input-group">
+          <input type = "email" id = "email" required>
+          <label for = "email"><i class="fa-solid fa-envelope"></i> Enter email </label>
+        </div>
+        <div class="input-group">
+          <textarea id="wishes" rows="3" cols="20" required></textarea>
+          <label for = "wishes"><i class="fa-solid fa-gift"></i> Send the celebrant a birthday message</label>
+        </div>
+        <button type="submit">SUBMIT</button>
+      </form>
     </main>
 
     <footer>
