@@ -10,7 +10,8 @@
 <body>
   <div class = "container">
     <header>
-      <img id = "picture" src = "" alt = "Christ Chapel Birthdays">
+      <img id = "picture" src = "CC-Logo.png" alt = "Christ Chapel Birthdays">
+      <script src="https://kit.fontawesome.com/96cd2da4f6.js" crossorigin="anonymous"></script>
       <h1 id = "siteName"> Christ Chapel MD Birthdays </h1>
       <hr>
       <section>
@@ -23,21 +24,27 @@
     </section>     
     </header>
 
-    <main>
-      <h2>Fill form to add a birthday</h2>
-      <fieldset>
-        <form id = "birthForm">
-          <label for = "name"> Enter full name </label><br>
-          <input type = "text" name = "name" placeholder= "enter name" required><br>
-          <label for = "BirthDate"> Enter birth date </label><br>
-          <input type = "text" name = "BirthDate" placeholder= "birthday" required><br>
-          <label for = "phoneNumber"> Enter phone number </label><br>
-          <input type = "tel" name = "phoneNumber" placeholder= "(999)999-9999" required><br>
-          <label for = "email"> Enter email </label><br>
-          <input type = "email" name = "email" placeholder= "birthday@gmail.com" required><br><br>
-          <input type="submit" value="Submit">
-        </form>
-      </fieldset>
+    <main id = "birthForm">
+      <!-- <h2>Fill form to add a birthday</h2> -->
+      <form>
+        <div class="input-group">
+          <input type = "text" id = "name" required>
+          <label for = "name"><i class="fa-solid fa-user"></i> Enter full name </label>
+        </div>
+        <div class="input-group">
+          <input type = "text" id = "BirthDate" required>
+          <label for = "BirthDate"><i class="fa-solid fa-cake-candles"></i> Enter birth date </label>
+        </div>
+        <div class="input-group">
+          <input type = "tel" id = "phoneNumber" required>
+          <label for = "phoneNumber"><i class="fa-solid fa-phone"></i> Enter phone number </label>
+        </div>
+        <div class="input-group">
+          <input type = "email" id = "email" required>
+          <label for = "email"><i class="fa-solid fa-envelope"></i> Enter email </label>
+        </div>
+        <button type="submit">SUBMIT</button>
+      </form>
     </main>
 
     <footer>
