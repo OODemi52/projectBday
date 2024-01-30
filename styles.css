@@ -26,6 +26,9 @@
         4. Margin: The space between the border and other elements on the page. It creates the gap between elements.
         *It's important to note that the width and height properties in CSS refer to the content area only. To calculate the total size of an element, you need to consider the content, padding, border, and margin.
 */
+html{
+    font-size: 16px;
+}
 body{
     background-image: url(background.png);
 }
@@ -51,25 +54,64 @@ footer{
     text-align: center;
 }
 
-table{
-    margin-left: auto;
-    margin-right: auto;
+main.table{
+    width: 50vw;
+    height: 90vh;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow: hidden;
 }
 
-table, th, td {
-    border:1px solid black;
-  }
+table, th, td{
+    padding: 1rem;
+}
 
 #siteName{
     font-family: sans-serif;
-    font-size: 48px;
+    font-size: 3rem;
     text-align: center;
     color: rgb(26, 24, 24);
     margin: 5px;
     
 }
 
+#buttons {
+    text-align: center; /* Align buttons in the center */
+}
+
 #buttons li {
+    display: inline-block; /* Change display to inline-block */
+}
+
+#buttons li a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10%;
+    margin: 0 10px; /* Adjust margin for spacing between buttons */
+    background-color: slategray;
+    font-family: sans-serif;
+    color: white !important;
+    text-decoration: none;
+}
+
+#buttons li a:hover,
+#buttons li a:active {
+    background-color: rgb(37, 25, 117);
+}
+
+
+/* Media Query for Responsive Styling */
+@media screen and (max-width: 600px) {
+    #buttons li {
+        display: block; /* Change to block on smaller screens */
+        margin: 10px auto; /* Center buttons with auto margins */
+    }
+}
+
+
+/* #buttons li {
     display: inline;
     padding: 10px;
     border-radius: 10%;
@@ -85,7 +127,7 @@ table, th, td {
 
 #buttons li:hover{
     background-color: darkslateblue;
-}
+} */
 
 #birthForm, #wishesForm{
     margin-top: 50px;
@@ -109,9 +151,9 @@ input, textarea{
     padding: 10px;
     outline: 0;
     border: 1px solid black;
-    color: #332d2d29;
+    color: black;
     background: transparent;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 label{
@@ -137,5 +179,36 @@ button{
 
 input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label{
     top: -35px;
-    font-size: 14.5px;
+    font-size: 0.9rem;
 }
+
+
+
+
+/* #birthlistHeading{
+    text-align: center;
+    margin: 50px;;
+}
+
+.birthdayTable{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.birthdayTable thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+} */
+
+/* table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border:1px solid black;
+  } */
