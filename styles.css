@@ -54,14 +54,7 @@ footer{
     text-align: center;
 }
 
-.tableBody{
-    display: grid;
-    height: 10vh;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-}
-/* main.table{
+main.table{
     width: 50vw;
     height: 90vh;
     background-color: #fff5;
@@ -70,9 +63,9 @@ footer{
     border-radius: .8rem;
     overflow: hidden;
 }
- */
-table{
-    border-collapse: collapse;  
+
+table, th, td{
+    padding: 1rem;
 }
 
 #siteName{
@@ -116,6 +109,25 @@ table{
         margin: 10px auto; /* Center buttons with auto margins */
     }
 }
+
+
+/* #buttons li {
+    display: inline;
+    padding: 10px;
+    border-radius: 10%;
+    margin-left: 200px;
+    background-color: slategray;
+}
+
+#buttons li a{
+    font-family: sans-serif;
+    color: white !important;
+    text-decoration: none;
+}
+
+#buttons li:hover{
+    background-color: darkslateblue;
+} */
 
 #birthForm, #wishesForm{
     margin-top: 50px;
@@ -173,3 +185,30 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
 
 
 
+/* #birthlistHeading{
+    text-align: center;
+    margin: 50px;;
+}
+
+.birthdayTable{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.birthdayTable thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+} */
+
+/* table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border:1px solid black;
+  } */
